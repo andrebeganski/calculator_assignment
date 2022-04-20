@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>Gas Prices as Portion of Gig Work Income</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Your styles should be called here -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+</head>
+
+<body>
+    <!-- YOUR CONTENT GOES HERE -->
+    <div class='container'>
+        <h1>How Much are Gig Workers Spending on Gas?</h1>
+        <p class='byline'>By André Beganski</p>
+    </div>
+    <div class='container image'>
+        <img src='img/petrol.jpg' />
+    </div>
+    <div class='container'>
+        <p>When Veronica Gutierrez lost her warehouse job at the onset of the pandemic, she worried about making ends meet to provide for her eight children in Riverside, CA. 
+            </p>
+        <p>Doing deliveries for Uber Eats and DoorDash made sense because of the flexibility it provided – she could pause work at a moment’s notice to check in on her kids, who were learning remotely – and it paid so well that gig work essentially became her full-time job. Using both apps at the same time, she took home about $900 a week across 50 hours of work.
+            </p>
+        <p>Currently, it’s become roughly twice as expensive for Gutierrez to refuel her sedan. Over $100 of her weekly budget is consumed by increases in the price of gas, made worse by a U.S. ban on Russian energy products.
+            </p>
+        <p>Gig workers who earn income through online platforms like Uber, Lyft and GrubHub are feeling the sharp pain of elevated gas prices. She said, “Honestly, these gas prices are killing us.”
+            </p>
+        <p>People are dealing with the problem in different ways, depending on how much they rely on gig work as a source of income, but there are limits to what they can do with little bargaining power over their employers.
+            </p>
+        <p>Because they’re classified as independent contractors, gig workers cover all the costs associated with driving, from vehicle insurance to car maintenance, while having no cushion against spikes in the price of gas, which recently peaked at a national all-time high, according to AAA.
+            </p>
+    </div>
+    <div class='calc-container'>
+        <div class="container">
+            <h2>Calculating the portion of a gig worker's income that is spent on gas</h2>
+            <p>If you do gig work for a company like Uber or DoorDash, how much you spend on gas can vary widely.</p>
+            <div class="calculator">
+                <div class="row">
+                    <div class='item'>
+                        <h3>Weekly Income</h3>
+                        <img class="icon3" src="img/money.png" />
+                        <div class="qty_container">
+                            <div>
+                                <input type="number" id="box1" name='qty1' value="0" oninput="calculate();"/>
+                            </div>
+                            <div class="unit">
+                                $
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class='item'>
+                        <h3>Car's Fuel Efficiency</h3>
+                        <img class="icon2" src="img/engine.png" />
+                        <div class="qty_container">
+                            <div>
+                                <input type="number" id="box2" name='qty2' value="0" oninput="calculate();"/>
+                            </div>
+                            <div class="unit">
+                                mpg
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class='item'>
+                        <h3>Miles per Week</h3>
+                        <img class="icon" src="img/tire.png" />
+                        <div class="qty_container">
+                            <div>
+                                <input type="number" id="box3" name='qty3' value="0" oninput="calculate();"/>
+                            </div>
+                            <div class="unit">
+                                mi
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class='item'>
+                        <h3>Cost per Gallon</h3>
+                        <img class="icon3" src="img/gas.png" />
+                        <div class="qty_container">
+                            <div>
+                                <input type="number" id="box4" name='qty4' value="0" oninput="calculate();"/>
+                            </div>
+                            <div class="unit">
+                                $
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class='item'>
+                        <h3>Percentge of weekly income spent on gas:</h3>
+                        <div class="qty_container">
+                            <div>
+                                <input type="number" id="result" value="100" />
+                            </div>
+                            <div class="unit">
+                                %
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.calc-container -->
+    <div class='container'>
+        <p>Gig companies have ballooned in popularity since the pandemic began and employ millions of adults throughout the country. A recent study conducted by the Pew Research Center surveyed over 10,000 Americans and found that 1 in 10 people over age 18 had earned income through gig work facilitated by an online platform within the past year.
+            </p>
+        <p>Most of these people said gig work was a side job, but nearly a third of them said it was their primary source of income.
+            </p>
+        <p>Companies like Uber and Lyft have responded to sky-high fuel prices by announcing surcharges on fares and deliveries. Uber recently announced their platforms will pay 35 to 55 cents more per trip or order, depending on the location. And for the next couple of months, drivers in most places will earn an additional $0.55 per ride while using Lyft.
+            </p>
+        <p>Erin Hatton, Associate Professor of Sociology at the University at Buffalo, who’s an expert on labor movements and gig work, said companies aren’t too concerned about gas prices forcing people to quit or drive less because they know there will always be people out there who are always willing to work for less.
+            </p>
+        <p>“For those workers who really are struggling to make ends meet, or maybe struggling to pay for their children’s college, they’re hustling to make ends meet wherever they can,” said Hatton.
+            </p>
+        <p>Drivers are fearful that if gas prices continue to rise their employers won’t have their backs, and gig workers won’t be able to do much about it. Gutierrez said, “I’m really hoping it doesn’t go to the $6 mark … It would change my whole dynamic.”
+            </p>
+        <p>And there are both legal and social barriers that hamper gig worker’s ability to organize or affect change.
+            </p>
+        <p>It’s difficult for workers to organize in any workspace, said Hatton, and especially in those that are entirely mobile, where workers are isolated in their own cars. And as independent contractors, they’re legally considered their own boss, with no protected right to organize or bargain collectively.
+            </p>
+        <p>Gig workers are trying to leverage what power they have by organizing together online, through social media and websites like Coworker.org, which hosts labor-related petitions. So far, one initiative to raise rates for gig workers has received over 9,500 signatures.
+            </p>
+        <p>Some gig workers who need the money are reducing the number of hours they drive and being more strategic about when they work.
+            </p>
+        <p>Gutierrez has cut her weekly hours back by nearly half and only drives between 10 a.m. and 2 p.m. to capitalize on the lunch rush. She said, “I just don’t want to risk having to drive around and waste gas.”
+            </p>
+        <p>Other workers, not as dependent on the income they earn through online gig platforms, have put gig work on pause entirely until the cost of gas comes back down.
+            </p>
+        <p>Christina Brown started buying her gasoline wholesale at Costco to offset the brunt of high gas prices, but that wasn’t enough to justify her side gig.
+            </p>
+        <p>“I’d really have to be working some hours just to fill my tank up, and that takes away from my family,” said Brown, 46, in Phoenix, AZ, who quit driving for Uber and Lyft a couple of weeks ago. “My kids are too important, so my time is valuable.”
+            </p>
+        <p>But the degree to which online gig platforms respond to their workers’ concerns about gas prices will largely be up to them. Hatton said, “At the end of the day, these companies are all about making a profit, and not at all about treating workers well.”
+            </p>
+    </div>
+
+    <!-- Your javascript should be called here -->
+    <script src="main.js"></script>
+</body>
+
+</html>
